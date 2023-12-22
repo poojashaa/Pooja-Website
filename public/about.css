@@ -1,0 +1,115 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #53a8b6;
+    width: 100%;
+    position: fixed;
+    top: 0; /* Adjust the value to your desired distance from the top */
+    z-index: 1000;
+    height: 50px;
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    box-sizing: border-box; /* Include padding and border in the total width and height */
+}
+
+.nav-pills {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item {
+    margin: 0 10px;
+}
+
+.whole {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.skills, .volunteer {
+    width: 45%;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+}
+
+h2 {
+    color: #5585b5;
+    border-bottom: 2px solid #5585b5;
+    padding-bottom: 10px;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+h4 {
+    color: #5585b5;
+    margin-bottom: 5px;
+}
+
+/* Style the date */
+h4::before {
+    content: '\2022'; /* Unicode for a bullet point */
+    color: #5585b5;
+    margin-right: 5px;
+}
+
+/* Add some padding and a border to create a card effect for each volunteer work entry */
+h4, p {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Add some spacing between entries */
+h4 + p {
+    margin-top: 10px;
+}
+
+/* Add hover effect to volunteer work entries */
+h4:hover, p:hover {
+    background-color: #f0f0f0;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .whole {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills, .volunteer {
+        width: 80%;
+    }
+}
+
+/* Style to remove underline from the footer */
+header a {
+    text-decoration: none;
+}  
+
+
+a {
+    
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #5585b5;
+}

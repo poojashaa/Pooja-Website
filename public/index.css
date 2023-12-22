@@ -1,0 +1,100 @@
+body {
+  background-color: white;
+  margin: 0;
+  font-family: 'Dosis', sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  border: 2px solid #79c2d0; /* Set border color here */
+}
+
+.card-bio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-wrapper {
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.person-info {
+  margin-bottom: 15px;
+}
+
+h3 {
+  color: #333;
+  margin: 0;
+}
+
+p {
+  color: #777;
+  margin: 5px 0 0;
+}
+
+.card-btn {
+  background-color: #5585b5;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.card-btn:hover {
+  background-color: #53a8b6;
+}
+
+.card-btn-contact {
+  margin-right: 8px;
+}
+
+.fas {
+  font-size: 18px;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #53a8b6;
+  text-align: center;
+  z-index: 1000;
+ 
+  
+}
+
+li{
+  list-style: none;
+  text-decoration: none;
+ 
+}
+
+ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+}
